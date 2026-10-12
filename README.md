@@ -2,8 +2,8 @@
 
 > **A machine-learning portfolio project that scores synthetic financial transactions and flags cases for review.**
 >
-> **Live demo:** `ADD_YOUR_STREAMLIT_APP_URL_HERE`  
-> **GitHub repository:** `ADD_YOUR_GITHUB_REPOSITORY_URL_HERE`
+> **Live demo:** `https://fraudshield-ml-project.streamlit.app/`  
+> **GitHub repository:** `https://github.com/premjavali05/fraudshield`
 
 FraudShield is an end-to-end ML application built to explore the full lifecycle of a fraud-detection model: inspecting data, engineering features, handling class imbalance, evaluating model behaviour, packaging an inference artifact, serving predictions, recording an audit trail, and deploying an interactive application.
 

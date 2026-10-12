@@ -1,0 +1,47 @@
+{
+  "project": "FraudShield",
+  "model_name": "HistGradientBoostingClassifier",
+  "feature_version": "v2_full_training_weighted",
+  "features": [
+    "amount",
+    "amount_log",
+    "hour",
+    "day",
+    "type_CASH_IN",
+    "type_CASH_OUT",
+    "type_DEBIT",
+    "type_PAYMENT",
+    "type_TRANSFER",
+    "origin_balance_log",
+    "destination_balance_log",
+    "origin_balance_zero",
+    "destination_balance_zero"
+  ],
+  "threshold": 0.7800721293318664,
+  "threshold_selection": "Maximum F1 on internal validation",
+  "training_rows": 4865605,
+  "training_fraud_cases": 4625,
+  "training_legitimate_cases": 4860980,
+  "class_weighting": {
+    "fraud": 1.0,
+    "legitimate": 0.095145
+  },
+  "final_temporal_evaluation": {
+    "roc_auc": 0.9988,
+    "average_precision": 0.9447,
+    "fraud_precision": 0.9159,
+    "fraud_recall": 0.8355,
+    "fraud_f1": 0.8739,
+    "true_negatives": 88118,
+    "false_positives": 96,
+    "false_negatives": 206,
+    "true_positives": 1046
+  },
+  "limitations": [
+    "Training used the full training partition, not all dataset rows.",
+    "PaySim is synthetic data.",
+    "The model's raw scores are not calibrated fraud probabilities.",
+    "Balance features may exploit simulator-specific patterns.",
+    "The temporal test was used to compare candidate models."
+  ]
+}

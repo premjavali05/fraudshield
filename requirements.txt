@@ -1,7 +1,14 @@
-numpy
-pandas
+numpy==2.5.3
+pandas==3.0.6
 matplotlib
 seaborn
-scikit-learn
+scikit-learn==1.9.1
 jupyter
 ipykernel
+fastapi
+uvicorn[standard]
+pytest
+httpx
+joblib==1.6.0
+streamlit
+requests
